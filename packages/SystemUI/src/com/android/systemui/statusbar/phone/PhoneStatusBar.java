@@ -2133,7 +2133,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
     /**
      * Return whether there are any clearable notifications
      */
-    private boolean hasActiveClearableNotifications() {
+    public boolean hasActiveClearableNotifications() {
         int childCount = mStackScroller.getChildCount();
         for (int i = 0; i < childCount; i++) {
             View child = mStackScroller.getChildAt(i);
